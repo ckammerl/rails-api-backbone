@@ -20,7 +20,8 @@ app.Posts = Backbone.Collection.extend({
   model: app.Post,
 
   // location of persistent data store. In this case, it's the browser's local stroage
-  localStorage: new Backbone.LocalStorage('share-anything')
+  // localStorage: new Backbone.LocalStorage('share-anything')
+  url: 'http://localhost:3000/posts'
 });
 
 // Backbone View for the Post model.
