@@ -25,7 +25,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
     @post.destroy
     head :no_content
   end
